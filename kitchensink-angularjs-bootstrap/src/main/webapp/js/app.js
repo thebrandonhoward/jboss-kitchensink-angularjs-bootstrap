@@ -1,4 +1,4 @@
-var cpModule = angular.module( 'cpModule', ['ngRoute', 'cpControllers'] );
+var cpModule = angular.module( 'cpModule', ['ngRoute', 'cpControllers', 'cpFilters'] );
 
 cpModule.config(['$routeProvider',
   function( $routeProvider )

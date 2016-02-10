@@ -15,6 +15,10 @@
                     <li ng-repeat="link in links | filter:searchBy | orderBy:sortBy" class="thumbnail">
                         <a href="{{ link.url }}" class="thumb" target="_blank"><img ng-src="{{ link.imgurl }}" alt="{{ link.name }}"></a>
                         <p>{{ link.snippet }}</p>
+                        <dl>
+                            <dt>Shared</dt>
+                                <dd>{{ link.shared | cpCheckmark }}</dd>
+                        </dl>
                     </li>
                 </ul>
             </div>
