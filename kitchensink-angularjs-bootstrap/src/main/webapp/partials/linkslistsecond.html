@@ -1,0 +1,22 @@
+    <div ng-controller="cpControllersSecond">
+            <h2> Direct Search Group ID: {{ linkid }} </h2>
+            <h2> Total Saved in Group: {{ links.length }} </h2>
+            <hr>
+            
+            Search By: <input placeholder="enter search term" ng-model="searchBy">
+            Sort By: <select ng-model="sortBy">
+                        <option value="name">Alphabetical</option>
+                        <option value="age">Newest</option>
+                     </select>
+            <hr>
+            
+            <div class="list-group">
+                <ul>
+                    <li ng-repeat="link in links | filter:searchBy | orderBy:sortBy" class="thumbnail">
+                        <a href="{{ link.url }}" class="thumb" target="_blank"><img ng-src="{{ link.imgurl }}" alt="{{ link.name }}"></a>
+                        <p>{{ link.snippet }}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        

@@ -1,0 +1,25 @@
+[ { "name": "Google Search"
+   ,"snippet": "Web Browser."
+   ,"url": "https://www.google.com/webhp?source=search_app&gws_rd=ssl"
+   ,"imgurl": "img/google.png"
+   ,"age": 1
+  },
+  { "name": "Centerpiece2.0"
+   ,"snippet": "Associate productivity tool."
+   ,"url": "http://ngaserverplatform.dev.nextgenassembly.rmnim.qa.walmart.com:8080/CenterpieceMvc/"
+   ,"imgurl": "img/C.png"   
+   ,"age": 2
+  },
+  { "name": "Angularjs.org"
+   ,"snippet": "Angularjs.org tutorial."
+   ,"url": "https://docs.angularjs.org/tutorial/step_02"
+   ,"imgurl": "img/angular.png"
+   ,"age": 3
+  },
+  { "name": "Angular2.0"
+   ,"snippet": "Angularjs Home Page for 2.0 Beta."
+   ,"url": "https://angular.io/"
+   ,"imgurl": "img/angular2.png"
+   ,"age": 4
+  }
+]
