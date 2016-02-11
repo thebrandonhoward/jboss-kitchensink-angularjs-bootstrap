@@ -24,6 +24,8 @@
         <script src="js/libs/angular-route.js"></script>
         <!-- Load angularjs-resource, which allows us to interact with REST resources as high level services -->
         <script src="js/libs/angular-resource.js"></script>
+        <!-- Load angularjs-animate -->
+        <script src="js/libs/angular-animate.js"></script>
     
         <!-- Load the controllers for our app -->
         <script src="js/controllers.js"></script>
@@ -37,10 +39,15 @@
         <!-- Load the filters for out app -->
         <script src="js/filters/filters.js"></script>
         
+        <!-- Load the animationss for the app -->
+        <script src="js/animations/animations.js"></script>
+        
     </head>
     
     <body> 
-        <div ng-view></div>
+        <div class="view-container">
+            <div ng-view class="view-frame"></div>
+        </div>
     </body>
     
 </html>

@@ -1,6 +1,7 @@
     <div ng-controller="cpControllersSecond">
             <h2> Direct Search Group ID: {{ linkid }} </h2>
             <h2> Total Saved in Group: {{ links.length }} </h2>
+            <h2> Log Data List: <button ng-click = "listData('behowar')">Submit</button></h2>
             <hr>
             
             Search By: <input placeholder="enter search term" ng-model="searchBy">
@@ -10,9 +11,9 @@
                      </select>
             <hr>
             
-            <div class="list-group">
+            <div class="list-group" class="lists-images">
                 <ul>
-                    <li ng-repeat="link in links | filter:searchBy | orderBy:sortBy" class="thumbnail">
+                    <li ng-repeat="link in links | filter:searchBy | orderBy:sortBy" class="thumbnail links-listing">
                         <a href="{{ link.url }}" class="thumb" target="_blank"><img ng-src="{{ link.imgurl }}" alt="{{ link.name }}"></a>
                         <p>{{ link.snippet }}</p>
                     </li>

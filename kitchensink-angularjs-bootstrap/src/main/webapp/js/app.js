@@ -1,4 +1,4 @@
-var cpModule = angular.module( 'cpModule', ['ngRoute', 'cpControllers', 'cpFilters'] );
+var cpModule = angular.module( 'cpModule', ['ngRoute', 'cpControllers', 'cpFilters', 'cpServices', 'cpAnimations'] );
 
 cpModule.config(['$routeProvider',
   function( $routeProvider )
@@ -13,11 +13,3 @@ cpModule.config(['$routeProvider',
                          })
                    .otherwise( { redirectTo: '/' });
   }]);
-
-
-
-
-
-
-
-
